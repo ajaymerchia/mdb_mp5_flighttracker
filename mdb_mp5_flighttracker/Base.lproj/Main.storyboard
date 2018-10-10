@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pRS-7S-xxf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="YTn-m3-kqh">
+            <objects>
+                <viewController id="35H-bb-Css" customClass="AirportMapViewController" customModule="mdb_mp5_flighttracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o9K-7b-9yX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vM4-Jc-Gcw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Cwf-12-UdY"/>
+                    <connections>
+                        <segue destination="0wy-5x-DWb" kind="show" identifier="map2airport" id="mae-8y-aAS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUf-XD-C98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="-759"/>
+        </scene>
+        <!--Airport Info View Controller-->
+        <scene sceneID="oIr-a7-RGK">
+            <objects>
+                <viewController id="0wy-5x-DWb" customClass="AirportInfoViewController" customModule="mdb_mp5_flighttracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wYY-M8-fXr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OTA-UI-OxM"/>
+                    </view>
+                    <connections>
+                        <segue destination="GJh-Ho-jGQ" kind="show" identifier="airport2flight" id="MhZ-gg-ujn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cmf-Cw-jkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="-759"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="F2D-OF-BKm">
+            <objects>
+                <viewController id="dY9-LF-vwM" customClass="RequestFlightViewController" customModule="mdb_mp5_flighttracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lse-JP-88M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Hq0-ls-oRM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="YlV-XF-Fwy"/>
+                    <connections>
+                        <segue destination="MDI-SK-hVE" kind="show" identifier="search2results" id="mJC-9I-ZkS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azb-zX-5mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="-1473"/>
+        </scene>
+        <!--Search Results View Controller-->
+        <scene sceneID="heT-B7-Dmt">
+            <objects>
+                <viewController id="MDI-SK-hVE" customClass="SearchResultsViewController" customModule="mdb_mp5_flighttracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hrv-OM-Cto">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Fv6-Gi-wtg"/>
+                    </view>
+                    <connections>
+                        <segue destination="GJh-Ho-jGQ" kind="show" identifier="results2flight" id="0H6-Sn-CGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EN-Cr-Xys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="-1473"/>
+        </scene>
+        <!--Flight Info View Controller-->
+        <scene sceneID="uhc-1h-bVc">
+            <objects>
+                <viewController id="GJh-Ho-jGQ" customClass="FlightInfoViewController" customModule="mdb_mp5_flighttracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J8f-P0-2bX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="P6b-lw-32b"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9a9-5s-3EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="-1473"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VMD-Ak-vVP">
+            <objects>
+                <tabBarController id="pRS-7S-xxf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cvh-Ll-eMg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dY9-LF-vwM" kind="relationship" relationship="viewControllers" id="o9q-iE-Hnd"/>
+                        <segue destination="35H-bb-Css" kind="relationship" relationship="viewControllers" id="VOY-30-7NH"/>
+                        <segue destination="YYL-CG-d5H" kind="relationship" relationship="viewControllers" id="oeU-Sg-6TE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aP-Sn-RmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-960" y="-758"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="904-Jd-vey">
+            <objects>
+                <viewController id="YYL-CG-d5H" customClass="FavoritesViewController" customModule="mdb_mp5_flighttracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qg8-Yp-WGg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="npU-Fa-Zkj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fUe-hv-qdi"/>
+                    <connections>
+                        <segue destination="GJh-Ho-jGQ" kind="show" identifier="favorite2flight" id="pPe-JH-B7B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2F-O5-l3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="21"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MhZ-gg-ujn"/>
+    </inferredMetricsTieBreakers>
+</document>

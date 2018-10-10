@@ -1,0 +1,6 @@
+framework module Pods_mdb_mp5_flighttrackerUITests {
+  umbrella header "Pods-mdb_mp5_flighttrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

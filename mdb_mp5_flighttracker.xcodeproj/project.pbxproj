@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		550526CAD0F87B56C49460D7 /* Pods_mdb_mp5_flighttrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF473EB0362EF7126EF2291 /* Pods_mdb_mp5_flighttrackerUITests.framework */; };
+		98C8E4FDC428AC912754A787 /* Pods_mdb_mp5_flighttracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EC503DC2336CF9776966B8 /* Pods_mdb_mp5_flighttracker.framework */; };
+		B7C45BEB216D9B220085CFA7 /* RequestFlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C45BEA216D9B220085CFA7 /* RequestFlightViewController.swift */; };
+		B7C45BED216D9B340085CFA7 /* FlightInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C45BEC216D9B340085CFA7 /* FlightInfoViewController.swift */; };
+		B7C45BEF216D9B470085CFA7 /* AirportMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C45BEE216D9B470085CFA7 /* AirportMapViewController.swift */; };
+		B7C45BF1216D9B5F0085CFA7 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C45BF0216D9B5F0085CFA7 /* SearchResultsViewController.swift */; };
+		B7C45BF3216D9BC40085CFA7 /* AirportInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C45BF2216D9BC40085CFA7 /* AirportInfoViewController.swift */; };
+		B7C45BF5216D9BD70085CFA7 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C45BF4216D9BD70085CFA7 /* FavoritesViewController.swift */; };
+		B7C45BF7216D9E740085CFA7 /* Lufthansa-API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C45BF6216D9E740085CFA7 /* Lufthansa-API.swift */; };
+		B7C45BFC216D9EFD0085CFA7 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C45BFB216D9EFD0085CFA7 /* Flight.swift */; };
+		B7C45BFE216D9F070085CFA7 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C45BFD216D9F070085CFA7 /* Airport.swift */; };
+		B7FBFDF6216D99BE00003AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FBFDF5216D99BE00003AF3 /* AppDelegate.swift */; };
+		B7FBFDFB216D99BE00003AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FBFDF9216D99BE00003AF3 /* Main.storyboard */; };
+		B7FBFDFD216D99BF00003AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7FBFDFC216D99BF00003AF3 /* Assets.xcassets */; };
+		B7FBFE00216D99BF00003AF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FBFDFE216D99BF00003AF3 /* LaunchScreen.storyboard */; };
+		B7FBFE0B216D99BF00003AF3 /* mdb_mp5_flighttrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FBFE0A216D99BF00003AF3 /* mdb_mp5_flighttrackerTests.swift */; };
+		B7FBFE16216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FBFE15216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests.swift */; };
+		EDD9E90C3F8816E22E0C4BEF /* Pods_mdb_mp5_flighttrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA3A3FB989440E9FBB14418 /* Pods_mdb_mp5_flighttrackerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7FBFE07216D99BF00003AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7FBFDEA216D99BE00003AF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7FBFDF1216D99BE00003AF3;
+			remoteInfo = mdb_mp5_flighttracker;
+		};
+		B7FBFE12216D99BF00003AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7FBFDEA216D99BE00003AF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7FBFDF1216D99BE00003AF3;
+			remoteInfo = mdb_mp5_flighttracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0355FB5B509E6445E1DF5E37 /* Pods-mdb_mp5_flighttracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mdb_mp5_flighttracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mdb_mp5_flighttracker/Pods-mdb_mp5_flighttracker.debug.xcconfig"; sourceTree = "<group>"; };
+		44EC503DC2336CF9776966B8 /* Pods_mdb_mp5_flighttracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mdb_mp5_flighttracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF473EB0362EF7126EF2291 /* Pods_mdb_mp5_flighttrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mdb_mp5_flighttrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EA3A3FB989440E9FBB14418 /* Pods_mdb_mp5_flighttrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mdb_mp5_flighttrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53410C670FA6E0D29E3577B4 /* Pods-mdb_mp5_flighttracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mdb_mp5_flighttracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-mdb_mp5_flighttracker/Pods-mdb_mp5_flighttracker.release.xcconfig"; sourceTree = "<group>"; };
+		685257EB19F9A60549258B52 /* Pods-mdb_mp5_flighttrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mdb_mp5_flighttrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mdb_mp5_flighttrackerTests/Pods-mdb_mp5_flighttrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CA0C57057683F6B2154E7A1 /* Pods-mdb_mp5_flighttrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mdb_mp5_flighttrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mdb_mp5_flighttrackerUITests/Pods-mdb_mp5_flighttrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A17A33E924B8C6768889B0F8 /* Pods-mdb_mp5_flighttrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mdb_mp5_flighttrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mdb_mp5_flighttrackerUITests/Pods-mdb_mp5_flighttrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7C45BEA216D9B220085CFA7 /* RequestFlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFlightViewController.swift; sourceTree = "<group>"; };
+		B7C45BEC216D9B340085CFA7 /* FlightInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoViewController.swift; sourceTree = "<group>"; };
+		B7C45BEE216D9B470085CFA7 /* AirportMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportMapViewController.swift; sourceTree = "<group>"; };
+		B7C45BF0216D9B5F0085CFA7 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		B7C45BF2216D9BC40085CFA7 /* AirportInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportInfoViewController.swift; sourceTree = "<group>"; };
+		B7C45BF4216D9BD70085CFA7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		B7C45BF6216D9E740085CFA7 /* Lufthansa-API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lufthansa-API.swift"; sourceTree = "<group>"; };
+		B7C45BFB216D9EFD0085CFA7 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		B7C45BFD216D9F070085CFA7 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		B7FBFDF2216D99BE00003AF3 /* mdb_mp5_flighttracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdb_mp5_flighttracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FBFDF5216D99BE00003AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7FBFDFA216D99BE00003AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7FBFDFC216D99BF00003AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7FBFDFF216D99BF00003AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7FBFE01216D99BF00003AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FBFE06216D99BF00003AF3 /* mdb_mp5_flighttrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mdb_mp5_flighttrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FBFE0A216D99BF00003AF3 /* mdb_mp5_flighttrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mdb_mp5_flighttrackerTests.swift; sourceTree = "<group>"; };
+		B7FBFE0C216D99BF00003AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FBFE11216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mdb_mp5_flighttrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FBFE15216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mdb_mp5_flighttrackerUITests.swift; sourceTree = "<group>"; };
+		B7FBFE17216D99BF00003AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1CFDE37B4114755B07F387 /* Pods-mdb_mp5_flighttrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mdb_mp5_flighttrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mdb_mp5_flighttrackerTests/Pods-mdb_mp5_flighttrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7FBFDEF216D99BE00003AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C8E4FDC428AC912754A787 /* Pods_mdb_mp5_flighttracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FBFE03216D99BF00003AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD9E90C3F8816E22E0C4BEF /* Pods_mdb_mp5_flighttrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FBFE0E216D99BF00003AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550526CAD0F87B56C49460D7 /* Pods_mdb_mp5_flighttrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A44BAD8D1FDFBF6E4BF19A96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44EC503DC2336CF9776966B8 /* Pods_mdb_mp5_flighttracker.framework */,
+				4EA3A3FB989440E9FBB14418 /* Pods_mdb_mp5_flighttrackerTests.framework */,
+				4AF473EB0362EF7126EF2291 /* Pods_mdb_mp5_flighttrackerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7C45BF9216D9E7E0085CFA7 /* API-Connects */ = {
+			isa = PBXGroup;
+			children = (
+				B7C45BF6216D9E740085CFA7 /* Lufthansa-API.swift */,
+			);
+			path = "API-Connects";
+			sourceTree = "<group>";
+		};
+		B7C45BFA216D9E8A0085CFA7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7C45BEA216D9B220085CFA7 /* RequestFlightViewController.swift */,
+				B7C45BF0216D9B5F0085CFA7 /* SearchResultsViewController.swift */,
+				B7C45BEC216D9B340085CFA7 /* FlightInfoViewController.swift */,
+				B7C45BEE216D9B470085CFA7 /* AirportMapViewController.swift */,
+				B7C45BF2216D9BC40085CFA7 /* AirportInfoViewController.swift */,
+				B7C45BF4216D9BD70085CFA7 /* FavoritesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B7C45BFF216D9F0B0085CFA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7C45BFB216D9EFD0085CFA7 /* Flight.swift */,
+				B7C45BFD216D9F070085CFA7 /* Airport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B7FBFDE9216D99BE00003AF3 = {
+			isa = PBXGroup;
+			children = (
+				B7FBFDF4216D99BE00003AF3 /* mdb_mp5_flighttracker */,
+				B7FBFE09216D99BF00003AF3 /* mdb_mp5_flighttrackerTests */,
+				B7FBFE14216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests */,
+				B7FBFDF3216D99BE00003AF3 /* Products */,
+				F032B4E382FC8FD5B0318BA1 /* Pods */,
+				A44BAD8D1FDFBF6E4BF19A96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7FBFDF3216D99BE00003AF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7FBFDF2216D99BE00003AF3 /* mdb_mp5_flighttracker.app */,
+				B7FBFE06216D99BF00003AF3 /* mdb_mp5_flighttrackerTests.xctest */,
+				B7FBFE11216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7FBFDF4216D99BE00003AF3 /* mdb_mp5_flighttracker */ = {
+			isa = PBXGroup;
+			children = (
+				B7FBFDF5216D99BE00003AF3 /* AppDelegate.swift */,
+				B7C45BF9216D9E7E0085CFA7 /* API-Connects */,
+				B7C45BFF216D9F0B0085CFA7 /* Models */,
+				B7C45BFA216D9E8A0085CFA7 /* ViewControllers */,
+				B7FBFDF9216D99BE00003AF3 /* Main.storyboard */,
+				B7FBFDFC216D99BF00003AF3 /* Assets.xcassets */,
+				B7FBFDFE216D99BF00003AF3 /* LaunchScreen.storyboard */,
+				B7FBFE01216D99BF00003AF3 /* Info.plist */,
+			);
+			path = mdb_mp5_flighttracker;
+			sourceTree = "<group>";
+		};
+		B7FBFE09216D99BF00003AF3 /* mdb_mp5_flighttrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7FBFE0A216D99BF00003AF3 /* mdb_mp5_flighttrackerTests.swift */,
+				B7FBFE0C216D99BF00003AF3 /* Info.plist */,
+			);
+			path = mdb_mp5_flighttrackerTests;
+			sourceTree = "<group>";
+		};
+		B7FBFE14216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7FBFE15216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests.swift */,
+				B7FBFE17216D99BF00003AF3 /* Info.plist */,
+			);
+			path = mdb_mp5_flighttrackerUITests;
+			sourceTree = "<group>";
+		};
+		F032B4E382FC8FD5B0318BA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0355FB5B509E6445E1DF5E37 /* Pods-mdb_mp5_flighttracker.debug.xcconfig */,
+				53410C670FA6E0D29E3577B4 /* Pods-mdb_mp5_flighttracker.release.xcconfig */,
+				685257EB19F9A60549258B52 /* Pods-mdb_mp5_flighttrackerTests.debug.xcconfig */,
+				CA1CFDE37B4114755B07F387 /* Pods-mdb_mp5_flighttrackerTests.release.xcconfig */,
+				A17A33E924B8C6768889B0F8 /* Pods-mdb_mp5_flighttrackerUITests.debug.xcconfig */,
+				9CA0C57057683F6B2154E7A1 /* Pods-mdb_mp5_flighttrackerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7FBFDF1216D99BE00003AF3 /* mdb_mp5_flighttracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FBFE1A216D99BF00003AF3 /* Build configuration list for PBXNativeTarget "mdb_mp5_flighttracker" */;
+			buildPhases = (
+				9DF3F676C7A90BE14B99F3DB /* [CP] Check Pods Manifest.lock */,
+				B7FBFDEE216D99BE00003AF3 /* Sources */,
+				B7FBFDEF216D99BE00003AF3 /* Frameworks */,
+				B7FBFDF0216D99BE00003AF3 /* Resources */,
+				19BF7164950BF90F7302A649 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mdb_mp5_flighttracker;
+			productName = mdb_mp5_flighttracker;
+			productReference = B7FBFDF2216D99BE00003AF3 /* mdb_mp5_flighttracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7FBFE05216D99BF00003AF3 /* mdb_mp5_flighttrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FBFE1D216D99BF00003AF3 /* Build configuration list for PBXNativeTarget "mdb_mp5_flighttrackerTests" */;
+			buildPhases = (
+				4DFAB2B1B56E5DFA60EA2F0E /* [CP] Check Pods Manifest.lock */,
+				B7FBFE02216D99BF00003AF3 /* Sources */,
+				B7FBFE03216D99BF00003AF3 /* Frameworks */,
+				B7FBFE04216D99BF00003AF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7FBFE08216D99BF00003AF3 /* PBXTargetDependency */,
+			);
+			name = mdb_mp5_flighttrackerTests;
+			productName = mdb_mp5_flighttrackerTests;
+			productReference = B7FBFE06216D99BF00003AF3 /* mdb_mp5_flighttrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7FBFE10216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FBFE20216D99BF00003AF3 /* Build configuration list for PBXNativeTarget "mdb_mp5_flighttrackerUITests" */;
+			buildPhases = (
+				42C0709B3CBCBDE7074F72B8 /* [CP] Check Pods Manifest.lock */,
+				B7FBFE0D216D99BF00003AF3 /* Sources */,
+				B7FBFE0E216D99BF00003AF3 /* Frameworks */,
+				B7FBFE0F216D99BF00003AF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7FBFE13216D99BF00003AF3 /* PBXTargetDependency */,
+			);
+			name = mdb_mp5_flighttrackerUITests;
+			productName = mdb_mp5_flighttrackerUITests;
+			productReference = B7FBFE11216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7FBFDEA216D99BE00003AF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ajay Raj Merchia";
+				TargetAttributes = {
+					B7FBFDF1216D99BE00003AF3 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					B7FBFE05216D99BF00003AF3 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B7FBFDF1216D99BE00003AF3;
+					};
+					B7FBFE10216D99BF00003AF3 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B7FBFDF1216D99BE00003AF3;
+					};
+				};
+			};
+			buildConfigurationList = B7FBFDED216D99BE00003AF3 /* Build configuration list for PBXProject "mdb_mp5_flighttracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7FBFDE9216D99BE00003AF3;
+			productRefGroup = B7FBFDF3216D99BE00003AF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7FBFDF1216D99BE00003AF3 /* mdb_mp5_flighttracker */,
+				B7FBFE05216D99BF00003AF3 /* mdb_mp5_flighttrackerTests */,
+				B7FBFE10216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7FBFDF0216D99BE00003AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FBFE00216D99BF00003AF3 /* LaunchScreen.storyboard in Resources */,
+				B7FBFDFD216D99BF00003AF3 /* Assets.xcassets in Resources */,
+				B7FBFDFB216D99BE00003AF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FBFE04216D99BF00003AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FBFE0F216D99BF00003AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19BF7164950BF90F7302A649 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mdb_mp5_flighttracker/Pods-mdb_mp5_flighttracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mdb_mp5_flighttracker/Pods-mdb_mp5_flighttracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42C0709B3CBCBDE7074F72B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mdb_mp5_flighttrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DFAB2B1B56E5DFA60EA2F0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mdb_mp5_flighttrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DF3F676C7A90BE14B99F3DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mdb_mp5_flighttracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7FBFDEE216D99BE00003AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C45BFC216D9EFD0085CFA7 /* Flight.swift in Sources */,
+				B7C45BEF216D9B470085CFA7 /* AirportMapViewController.swift in Sources */,
+				B7C45BF1216D9B5F0085CFA7 /* SearchResultsViewController.swift in Sources */,
+				B7C45BF5216D9BD70085CFA7 /* FavoritesViewController.swift in Sources */,
+				B7C45BF7216D9E740085CFA7 /* Lufthansa-API.swift in Sources */,
+				B7C45BFE216D9F070085CFA7 /* Airport.swift in Sources */,
+				B7C45BF3216D9BC40085CFA7 /* AirportInfoViewController.swift in Sources */,
+				B7FBFDF6216D99BE00003AF3 /* AppDelegate.swift in Sources */,
+				B7C45BED216D9B340085CFA7 /* FlightInfoViewController.swift in Sources */,
+				B7C45BEB216D9B220085CFA7 /* RequestFlightViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FBFE02216D99BF00003AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FBFE0B216D99BF00003AF3 /* mdb_mp5_flighttrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FBFE0D216D99BF00003AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FBFE16216D99BF00003AF3 /* mdb_mp5_flighttrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7FBFE08216D99BF00003AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7FBFDF1216D99BE00003AF3 /* mdb_mp5_flighttracker */;
+			targetProxy = B7FBFE07216D99BF00003AF3 /* PBXContainerItemProxy */;
+		};
+		B7FBFE13216D99BF00003AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7FBFDF1216D99BE00003AF3 /* mdb_mp5_flighttracker */;
+			targetProxy = B7FBFE12216D99BF00003AF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7FBFDF9216D99BE00003AF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7FBFDFA216D99BE00003AF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7FBFDFE216D99BF00003AF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7FBFDFF216D99BF00003AF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7FBFE18216D99BF00003AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7FBFE19216D99BF00003AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7FBFE1B216D99BF00003AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0355FB5B509E6445E1DF5E37 /* Pods-mdb_mp5_flighttracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = mdb_mp5_flighttracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mdb-iostraining.mdb-mp5-flighttracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7FBFE1C216D99BF00003AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53410C670FA6E0D29E3577B4 /* Pods-mdb_mp5_flighttracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = mdb_mp5_flighttracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mdb-iostraining.mdb-mp5-flighttracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7FBFE1E216D99BF00003AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 685257EB19F9A60549258B52 /* Pods-mdb_mp5_flighttrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = mdb_mp5_flighttrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mdb-iostraining.mdb-mp5-flighttrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mdb_mp5_flighttracker.app/mdb_mp5_flighttracker";
+			};
+			name = Debug;
+		};
+		B7FBFE1F216D99BF00003AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA1CFDE37B4114755B07F387 /* Pods-mdb_mp5_flighttrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = mdb_mp5_flighttrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mdb-iostraining.mdb-mp5-flighttrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mdb_mp5_flighttracker.app/mdb_mp5_flighttracker";
+			};
+			name = Release;
+		};
+		B7FBFE21216D99BF00003AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A17A33E924B8C6768889B0F8 /* Pods-mdb_mp5_flighttrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = mdb_mp5_flighttrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mdb-iostraining.mdb-mp5-flighttrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mdb_mp5_flighttracker;
+			};
+			name = Debug;
+		};
+		B7FBFE22216D99BF00003AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA0C57057683F6B2154E7A1 /* Pods-mdb_mp5_flighttrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T3JS4TFUB;
+				INFOPLIST_FILE = mdb_mp5_flighttrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mdb-iostraining.mdb-mp5-flighttrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mdb_mp5_flighttracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7FBFDED216D99BE00003AF3 /* Build configuration list for PBXProject "mdb_mp5_flighttracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FBFE18216D99BF00003AF3 /* Debug */,
+				B7FBFE19216D99BF00003AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FBFE1A216D99BF00003AF3 /* Build configuration list for PBXNativeTarget "mdb_mp5_flighttracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FBFE1B216D99BF00003AF3 /* Debug */,
+				B7FBFE1C216D99BF00003AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FBFE1D216D99BF00003AF3 /* Build configuration list for PBXNativeTarget "mdb_mp5_flighttrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FBFE1E216D99BF00003AF3 /* Debug */,
+				B7FBFE1F216D99BF00003AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FBFE20216D99BF00003AF3 /* Build configuration list for PBXNativeTarget "mdb_mp5_flighttrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FBFE21216D99BF00003AF3 /* Debug */,
+				B7FBFE22216D99BF00003AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7FBFDEA216D99BE00003AF3 /* Project object */;
+}
