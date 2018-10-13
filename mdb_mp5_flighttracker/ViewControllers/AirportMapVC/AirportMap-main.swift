@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
+import JGProgressHUD
 
 class AirportMapViewController: UIViewController {
 
+    var mapView:MKMapView!
+    var hud: JGProgressHUD?
+    var airports: [Airport] = []
+    var additionalPorts:UIButton!
+    var alerts: AlertManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpAlertManager()
+        initUI()
         // Do any additional setup after loading the view.
     }
     

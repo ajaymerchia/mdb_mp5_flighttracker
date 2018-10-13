@@ -7,12 +7,43 @@
 //
 
 import UIKit
+import MapKit
 
 class FlightInfoViewController: UIViewController {
 
+    var FLIGHT: Flight!
+    var mapView: MKMapView!
+    
+    var heightOfPane:CGFloat!
+    
+    var pane: UIView!
+    var flightStatus: UILabel!
+    var flightNumber: UILabel!
+    
+    var timingPane: UIView!
+    
+    var bigDepart: UILabel!
+    var smallDepart: UILabel?
+    var bigArrive: UILabel!
+    var smallArrive: UILabel?
+    
+    var srcAirportCode: UILabel!
+    var desAirportCode: UILabel!
+    var airportArrow: UIImageView!
+    
+    var plane: UIImageView!
+    var planeName: UILabel!
+    
+    var departTermGate: UILabel!
+    var arriveTermGate: UILabel!
+    
+    var animationDistance:CGFloat!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        heightOfPane = view.frame.height/1.5
+        initUI()
         // Do any additional setup after loading the view.
     }
     

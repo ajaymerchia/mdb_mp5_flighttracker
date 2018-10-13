@@ -25,7 +25,8 @@ target 'mdb_mp5_flighttracker' do
   pod 'JGProgressHUD', :inhibit_warnings => true
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git', :branch => 'wip/swift4', :inhibit_warnings => true
   pod 'IQKeyboardManager', :inhibit_warnings => true
-  
+#  pod 'AnimatedTextInput', '~> 0.3.0'
+
   
   
 end

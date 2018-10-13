@@ -6,15 +6,45 @@
 //  Copyright © 2018 Ajay Raj Merchia. All rights reserved.
 //
 
+import Foundation
 import UIKit
+import MapKit
+import CoreLocation
+import JGProgressHUD
 
 class AirportInfoViewController: UIViewController {
 
+    var airport: Airport!
+    
+    var mapView: MKMapView!
+    var alerts: AlertManager!
+    var hud: JGProgressHUD!
+    var selectedFlight: Flight?
+    
+    var segmentedControl: UISegmentedControl!
+    
+    var raceConditionController = 0
+    
+    var allFlights:[[Flight]] = [[],[]]
+    
+    var selectedIndex: IndexPath?
+
+    
+    var displayFlights: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        alerts = AlertManager(view: self, stateRestoration: {
+            self.hud?.dismiss()
+        })
+        initUI()
+        hud = Utils.startProgressHud(inView: view, withMsg: "Loading Flights")
 
+        pullFlights()
         // Do any additional setup after loading the view.
     }
+    
+    
     
 
     /*
