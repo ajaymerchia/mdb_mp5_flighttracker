@@ -131,10 +131,10 @@ class LufthansaAPI {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd'T'HH:mm"
         
-        let reasonableHourOffset:Double = 60 * 60 * 12 * 12
+        let reasonableHourOffset:Double = 60 * 60 * 12 * 0
         
         var targetDate = dateFormatter.string(from: Date.init(timeIntervalSinceNow: reasonableHourOffset))
-        targetDate = "2018-10-19T10:00"
+//        targetDate = "2018-10-19T10:00"
         
         let getURL = [endpoint, airportCode, targetDate].joined(separator: "/")
         let targetPaths = ["FlightStatusResource", "Flights", "Flight"]
