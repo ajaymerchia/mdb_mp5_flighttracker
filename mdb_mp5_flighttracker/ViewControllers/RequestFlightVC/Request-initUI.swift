@@ -28,7 +28,6 @@ extension RequestFlightViewController {
         Utils.addBackgroundImage(givenView: self.view, imgName: "lufthansa", opacity: 0.5)
         addHeader()
         initRequestEntryElements()
-        addDefaultData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -98,15 +97,5 @@ extension RequestFlightViewController {
         view.addSubview(flightRequestTrigger)
         
         
-    }
-    
-    func addDefaultData() {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        dateFormatter.locale = Locale(identifier: "en_US")
-        let defaultDate = dateFormatter.date(from: "2018-10-10")
-        
-        flightDatePicker.setDate(defaultDate!, animated: true)
-        flightNumberEntry.text = "LH004"
     }
 }
