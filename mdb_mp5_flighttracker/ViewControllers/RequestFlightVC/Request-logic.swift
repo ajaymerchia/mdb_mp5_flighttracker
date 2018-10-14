@@ -11,6 +11,13 @@ import UIKit
 import SwiftyJSON
 
 extension RequestFlightViewController {
+    func ensureFavorites() {
+        guard let _ = LocalData.getLocalDataAsArr(forKey: .favorites) else {
+            LocalData.putLocalData(forKey: .favorites, data: [])
+            return
+        }
+    }
+    
     @objc func searchFlights(sender: UIButton) {
         sender.isUserInteractionEnabled = false
         hud = Utils.startProgressHud(inView: self.view, withMsg: "Searching for Flight")

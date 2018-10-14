@@ -27,16 +27,25 @@ class FavoritesViewController: UIViewController {
         super.viewDidLoad()
         initUI()
         alertManager()
+        
 //        downloadFlights()
 //        initialized = true
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         if links != LocalData.getLocalDataAsArr(forKey: .favorites) {
+            startHud()
             downloadFlights()
+        } else {
+            hud?.dismiss()
+
         }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        startHud()
     }
 
     /*

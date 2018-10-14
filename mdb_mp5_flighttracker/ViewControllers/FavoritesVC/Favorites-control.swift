@@ -18,8 +18,13 @@ extension FavoritesViewController {
         })
     }
     
-    func downloadFlights() {
+    func startHud() {
+        hud?.dismiss()
         hud = Utils.startProgressHud(inView: view, withMsg: "Loading Favorites. This may take a while.")
+    }
+    
+    func downloadFlights() {
+        startHud()
         favorites = []
         selectedFlight = nil
         

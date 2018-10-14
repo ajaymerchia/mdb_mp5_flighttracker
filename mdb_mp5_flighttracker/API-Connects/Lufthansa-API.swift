@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import CoreLocation
 
 class LufthansaAPI {
     
@@ -126,28 +127,47 @@ class LufthansaAPI {
         sendGetRequest(endpoint: getURL, paths: targetPaths, callback: callback)
     }
     
-    static func getFlightsForAirport(endpoint: String, airportCode: String, callback: @escaping (JSON) -> ()) {
+    static func getFlightsForAirport(endpoint: String, airportLocation: CLLocation, airportCode: String, callback: @escaping (JSON) -> ()) {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd'T'HH:mm"
         
         let reasonableHourOffset:Double = 60 * 60 * 12 * 0
-        
         var targetDate = dateFormatter.string(from: Date.init(timeIntervalSinceNow: reasonableHourOffset))
-//        targetDate = "2018-10-19T10:00"
+        //        targetDate = "2018-10-19T10:00"
         
         let getURL = [endpoint, airportCode, targetDate].joined(separator: "/")
         let targetPaths = ["FlightStatusResource", "Flights", "Flight"]
-        sendGetRequest(endpoint: getURL, paths: targetPaths, callback: callback)
-    }
-    
-    static func getArrivalsFromAirport(airportCode: String, callback: @escaping (JSON) -> ()) {
-        getFlightsForAirport(endpoint: Constants.ARRIVALS, airportCode: airportCode, callback: callback)
+        
+//        let timezone = airportLocation.timezone
+        let geo = CLGeocoder()
+        geo.reverseGeocodeLocation(airportLocation) { (placemarks, err) in
+            guard let place = placemarks else {
+                sendGetRequest(endpoint: getURL, paths: targetPaths, callback: callback)
+                return
+            }
+            guard let tz = place[0].timeZone else {
+                sendGetRequest(endpoint: getURL, paths: targetPaths, callback: callback)
+                return
+            }
+            
+            dateFormatter.timeZone = tz
+            targetDate = dateFormatter.string(from: Date.init(timeIntervalSinceNow: reasonableHourOffset))
+            let getURL = [endpoint, airportCode, targetDate].joined(separator: "/")
+            sendGetRequest(endpoint: getURL, paths: targetPaths, callback: callback)
+
+        }
+        
         
     }
     
-    static func getDeparturesFromAirport(airportCode: String, callback: @escaping (JSON) -> ()) {
-        getFlightsForAirport(endpoint: Constants.DEPARTURES, airportCode: airportCode, callback: callback)
+    static func getArrivalsFromAirport(airportCode: String, airportLocation: CLLocation, callback: @escaping (JSON) -> ()) {
+        getFlightsForAirport(endpoint: Constants.ARRIVALS, airportLocation: airportLocation, airportCode: airportCode, callback: callback)
+        
+    }
+    
+    static func getDeparturesFromAirport(airportCode: String, airportLocation: CLLocation, callback: @escaping (JSON) -> ()) {
+        getFlightsForAirport(endpoint: Constants.DEPARTURES, airportLocation: airportLocation, airportCode: airportCode, callback: callback)
     }
     
 }

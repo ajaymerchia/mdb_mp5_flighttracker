@@ -21,7 +21,7 @@ extension AirportInfoViewController {
         
         let dateString = Utils.getYYYYMMDDRepr(date: Date.init(timeIntervalSinceNow: 0))
         
-        LufthansaAPI.getArrivalsFromAirport(airportCode: code) { (json) in
+        LufthansaAPI.getArrivalsFromAirport(airportCode: code, airportLocation: airport.location!) { (json) in
             let flightsArray = json.arrayValue
             for flight in flightsArray {
             
@@ -36,7 +36,7 @@ extension AirportInfoViewController {
             }
         }
         
-        LufthansaAPI.getDeparturesFromAirport(airportCode: code) { (json) in
+        LufthansaAPI.getDeparturesFromAirport(airportCode: code, airportLocation: airport.location!) { (json) in
             let flightsArray = json.arrayValue
             for flight in flightsArray {
 
